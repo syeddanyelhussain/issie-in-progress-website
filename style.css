@@ -1,0 +1,98 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
+header,
+footer,
+#latest-from-the-journal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header h3 {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.italicise {
+  font-style: italic;
+}
+
+#come-along-for-the-making {
+  text-align: center;
+}
+
+#finding-joy-in-the-making .subtitle {
+  margin-bottom: 0.5rem;
+}
+
+#finding-joy-in-the-making h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+#finding-joy-in-the-making .paragraph,
+#why-in-progress p {
+  margin-top: 0.5rem;
+}
+
+#hello-im-issie-aside h2 {
+  margin-bottom: 0;
+}
+
+#hello-im-issie-aside p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#a-little-further-down-the-road h3,
+#find-me-on-instagram h2,
+#lets-keep-in-touch h1,
+#lets-keep-in-touch .subtitle,
+#the-journal .subtitle,
+#hello-im-issie-section .subtitle {
+  margin-bottom: 0;
+}
+
+#find-me-on-instagram p,
+#the-journal h1,
+#hello-im-issie-section h1,
+#why-in-progress h2,
+#what-youll-find-here h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#a-little-further-down-the-road p,
+#lets-keep-in-touch h1,
+#lets-keep-in-touch p,
+#the-journal .paragraph,
+#hello-im-issie-section h3 {
+  margin-top: 0;
+}
