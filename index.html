@@ -3,23 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Issie in Progress | Welcome</title>
+    <title>Issie in Progress | Home</title>
     <meta name="description" content="" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <h3 id="issie-in-progress">Issie In Progress</h3>
-      <nav aria-label="Site pages">
+      <a href="index.html" class="site-brand">Issie in Progress</a>
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="journal.html">Journal</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -28,76 +22,76 @@
     </header>
     <hr />
     <main>
-      <section id="finding-joy-in-the-making">
+      <section class="home-hero split-layout">
         <div>
-          <p class="subtitle">A little ink. A little curiosity.</p>
+          <p class="eyebrow">A little ink. A little curiosity.</p>
           <h1>Finding joy in the making.</h1>
-          <p class="paragraph">
+          <p>
             Pens, inks, and creative experiments - a journal of things tried,
             things learned, and things still in progress.
           </p>
-          <a href="journal.html" class="button">Explore the journal</a>
+          <a href="journal.html" class="btn">Explore the journal</a>
         </div>
-        <img src="images/home-journal.png" alt="Journal" />
+        <img src="images/journal-with-swatches.png" alt="An open notebook with green and burgundy ink swatches beside a fountain pen" />
       </section>
-      <section>
-        <div id="latest-from-the-journal">
-          <h2>Latest from the journal</h2>
-          <a href="journal.html" class="call-to-action">View all entries</a>
+      <section class="latest-journal-entries">
+        <div class="section-heading">
+          <h2 class="mb-sm">Latest from the journal</h2>
+          <a href="journal.html" class="burgundy">View all entries</a>
         </div>
-        <div id="journal-entries-gallery">
-          <div>
-            <img src="images/home-ink-swatches.png" alt="Ink swatches" />
-            <p class="subtitle">Pens & Inks</p>
-            <p class="title">A page of new colours</p>
+        <div class="cards-layout">
+          <article>
+            <img src="images/ink-swatches.png" loading="lazy" alt="Four ink swatches ranging from teal to indigo" />
+            <p class="eyebrow">Pens & Inks</p>
+            <h3 class="card-title">A page of new colours</h3>
             <p>
               Trying a few new inks and seeing how they look on the page, side
               by side.
             </p>
-          </div>
-          <div>
-            <img src="images/home-ink-and-pen.png" alt="Ink and pen" />
-            <p class="subtitle">On My Desk</p>
-            <p class="title">Little tools, lovely details</p>
+          </article>
+          <article>
+            <img src="images/fountain-pen-and-ink.png" loading="lazy" alt="A green fountain pen beside an open ink bottle" />
+            <p class="eyebrow">On My Desk</p>
+            <h3 class="card-title">Little tools, lovely details</h3>
             <p>
               A few small things on my desk that make writing and creating feel
               a bit more special.
             </p>
-          </div>
-          <div>
-            <img src="images/home-flowers.png" alt="Flowers" />
-            <p class="subtitle">Experiments</p>
-            <p class="title">Making room to play</p>
+          </article>
+          <article>
+            <img src="images/plant-sketch.png" loading="lazy" alt="An unfinished flower sketch in burgundy ink" />
+            <p class="eyebrow">Experiments</p>
+            <h3 class="card-title">Making room to play</h3>
             <p>
               A relaxed sketching session, some simple motifs, and a reminder to
               keep things playful.
             </p>
-          </div>
+          </article>
         </div>
       </section>
       <hr />
-      <aside id="hello-im-issie-aside">
-        <img src="images/home-desk.png" alt="Desk" />
+      <section class="about-preview split-layout">
+        <img src="images/desk.png" alt="Desk" />
         <div>
-          <h2>Hello, I'm Issie.</h2>
+          <h2 class="mb-0">Hello, I'm Issie.</h2>
           <p>
             I'm a sationary enthusiast who finds a lot of joy in fountain pens,
             ink and time spent creating. Here I share ink swatches, pen
-            thoughts, creative experiments and the crafts I'm learning along
-            the way - from simple projects to new skills I'm still figuring out.
+            thoughts, creative experiments and the crafts I'm learning along the
+            way - from simple projects to new skills I'm still figuring out.
           </p>
-          <a href="about.html" class="call-to-action">A little about me</a>
+          <a href="about.html" class="burgundy">A little about me</a>
         </div>
-      </aside>
+      </section>
     </main>
     <hr />
     <footer>
-      <p>&copy; 2026 Isilda Balde</p>
+      <p class="mt-0">&copy; 2026 Isilda Balde</p>
       <a
         href="https://www.instagram.com/issie.in.progress/"
         target="_blank"
         rel="noopener noreferrer"
-        class="call-to-action"
+        class="burgundy"
         >Follow along on Instagram</a
       >
     </footer>

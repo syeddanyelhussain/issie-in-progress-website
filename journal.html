@@ -3,109 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Issie in Progress | Welcome</title>
+    <title>Issie in Progress | Journal</title>
     <meta name="description" content="" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <h3 id="issie-in-progress">Issie In Progress</h3>
-      <nav aria-label="Site pages">
+      <a href="index.html" class="site-brand">Issie in Progress</a>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="journal.html">Journal</a></li>
+          <li><a href="journal.html" aria-current="page">Journal</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <hr />
-    <main id="the-journal">
-      <p class="subtitle">Notes from my desk</p>
-      <h1>The journal</h1>
-      <p class="paragraph italicise">
+    <main>
+      <p class="eyebrow mb-0">Notes from my desk</p>
+      <h1 class="mt-0 mb-sm">The journal</h1>
+      <p class="italicise mt-0">
         Pens, inks, little discoveries, and things in progress.
       </p>
-      <div id="featured">
-        <img src="images/journal-journal.png" alt="Journal" />
+      <article class="featured-journal-entry">
+        <img
+          src="images/journal-with-swatches.png"
+          alt="Handwritten testing notes and ink swatches in an open notebook"
+        />
         <div>
-          <p class="subtitle">Pens & Inks</p>
+          <p class="eyebrow">Pens & Inks</p>
           <h2>A few new colours to get to know</h2>
           <p>
             I've added a few new inks to my collection and have been spending
             time getting to know them on the page - from colour and shading to
             how they feel to write with.
           </p>
-          <a href="">Read the entry -></a>
+          <a href="" class="burgundy">Read the entry -></a>
         </div>
-      </div>
-      <div id="journal-gallery">
-        <div>
-          <img src="images/journal-pen.png" alt="Pen" />
-          <p class="subtitle">Pens & Inks</p>
-          <p class="title">A new pen on my desk</p>
-          <p>
-            A closer look at my latest fountain pen - first impressions, how it
-            writes, and how it fits into my everyday setup.
-          </p>
+      </article>
+      <section>
+        <div class="cards-layout">
+          <article>
+            <img
+              src="images/fountain-pen.png"
+              alt="A capped burgundy fountain pen resting on linen"
+            />
+            <p class="eyebrow">Pens & Inks</p>
+            <h3 class="card-title">A new pen on my desk</h3>
+            <p>
+              A closer look at my latest fountain pen - first impressions, how
+              it writes, and how it fits into my everyday setup.
+            </p>
+          </article>
+          <article>
+            <img
+              src="images/letter.png"
+              alt="A green fountain pen and an open bottle of green ink"
+            />
+            <p class="eyebrow">Pens & Inks</p>
+            <h3 class="card-title">Finding my favourite green</h3>
+            <p>
+              I've been exploring different green inks lately, and I think I may
+              have found a new favourite.
+            </p>
+          </article>
+          <article>
+            <img
+              src="images/journal-with-note.png"
+              alt="Green handwriting in a dotted notebook"
+            />
+            <p class="eyebrow">On My Desk</p>
+            <h3 class="card-title">Putting pen to paper</h3>
+            <p>
+              A small reminder of why I love writing by hand - the focus, the
+              calm, and the simple pleasure of it.
+            </p>
+          </article>
+          <article>
+            <img
+              src="images/ink-swatches.png"
+              alt="Four blue and green ink swatches on textured paper"
+            />
+            <p class="eyebrow">Experiments</p>
+            <h3 class="card-title">An afternoon of swatching</h3>
+            <p>
+              I set aside a bit of time to swatch a few inks side by side - a
+              simple but really helpful way to see how they compare.
+            </p>
+          </article>
+          <article>
+            <img
+              src="images/plant-sketch.png"
+              alt="Burgundy flower stems with faint pencil lines showing the unfinished sketch"
+            />
+            <p class="eyebrow">Experiments</p>
+            <h3 class="card-title">A little time to experiment</h3>
+            <p>
+              Playing with a simple flower sketch and trying out different line
+              weights and shading with ink.
+            </p>
+          </article>
+          <article>
+            <img
+              src="images/journals.png"
+              alt="Two cloth notebooks beside a roll of botanical washi tape"
+            />
+            <p class="eyebrow">Experiments</p>
+            <h3 class="card-title">Small things that inspire</h3>
+            <p>
+              A few everyday materials and colours that are sparking ideas for
+              my next round of creative experiments.
+            </p>
+          </article>
         </div>
-        <div>
-          <img src="images/journal-ink-and-pen.png" alt="Ink and pen" />
-          <p class="subtitle">Pens & Inks</p>
-          <p class="title">Finding my favourite green</p>
-          <p>
-            I've been exploring different green inks lately, and I think I may
-            have found a new favourite.
-          </p>
-        </div>
-        <div>
-          <img src="images/journal-and-pen.png" alt="Journal and pen" />
-          <p class="subtitle">On My Desk</p>
-          <p class="title">Putting pen to paper</p>
-          <p>
-            A small reminder of why I love writing by hand - the focus, the
-            calm, and the simple pleasure of it.
-          </p>
-        </div>
-        <div>
-          <img src="images/journal-ink-swatches.png" alt="Ink swatches" />
-          <p class="subtitle">Experiments</p>
-          <p class="title">An afternoon of swatching</p>
-          <p>
-            I set aside a bit of time to swatch a few inks side by side - a
-            simple but really helpful way to see how they compare.
-          </p>
-        </div>
-        <div>
-          <img src="images/journal-flowers.png" alt="Flowers" />
-          <p class="subtitle">Experiments</p>
-          <p class="title">A little time to experiment</p>
-          <p>
-            Playing with a simple flower sketch and trying out different line
-            weights and shading with ink.
-          </p>
-        </div>
-        <div>
-          <img src="images/journals-and-tape.png" alt="Journal and tape" />
-          <p class="subtitle">Experiments</p>
-          <p class="title">Small things that inspire</p>
-          <p>
-            A few everyday materials and colours that are sparking ideas for my
-            next round of creative experiments.
-          </p>
-        </div>
-      </div>
+      </section>
     </main>
     <hr />
     <footer>
-      <p>&copy; 2026 Isilda Balde</p>
+      <p class="mt-0">&copy; 2026 Isilda Balde</p>
       <a
         href="https://www.instagram.com/issie.in.progress/"
         target="_blank"

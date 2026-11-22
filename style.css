@@ -1,47 +1,202 @@
+/* GENERAL */
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+:root {
+  --paper: #f7f3eb;
+  --forest: #243b2a;
+  --burgundy: #800020;
+  --deep-forest: rgba(36, 59, 42, 0.15);
+  --heading-font: "Cormorant Garamond", Georgia, serif;
+  --body-font: Inter, system-ui, sans-serif;
+}
+
 body {
-  font-family: "Cormorant Garamond", serif;
   max-width: 1000px;
+  box-sizing: border-box;
   margin: 5rem auto;
   padding: 0 2rem;
-  box-sizing: border-box;
   font-weight: 600;
-  background-color: #f7f3eb;
-  color: #243b2a;
+  font-family: var(--body-font);
+  color: var(--forest);
+  background-color: var(--paper);
 }
 
 h1 {
   font-size: 2.5rem;
+  font-family: var(--heading-font);
 }
 
 h2 {
   font-size: 2rem;
+  font-family: var(--heading-font);
+}
+
+h3 {
+  font-family: var(--heading-font);
 }
 
 img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-header,
-footer,
-#latest-from-the-journal {
+a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* SHARED */
+.italicise {
+  font-style: italic;
+}
+
+.eyebrow {
+  font-size: smaller;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--forest);
+}
+
+.burgundy {
+  color: var(--burgundy);
+}
+
+.site-brand {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.cards-layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.callout {
+  background-color: var(--deep-forest);
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-sm {
+  margin-top: 0.5rem;
+}
+
+.mb-sm {
+  margin-bottom: 0.5rem;
+}
+
+/* HEADER */
+header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-header h3 {
+header a {
+  text-decoration: none;
+}
+
+header > a {
   margin-bottom: 0;
   font-style: italic;
+  font-family: var(--heading-font);
 }
 
 nav ul {
   display: flex;
   gap: 2rem;
-  list-style: none;
   margin-bottom: 0;
+  list-style: none;
 }
 
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* INDEX.HTML */
+.home-hero p:nth-child(3) {
+  margin-bottom: 2.5rem;
+}
+
+.split-layout {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: 2fr 3fr;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.about-preview img {
+  border-radius: 100%;
+}
+
+.about-preview p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* JOURNAL.HTML */
+.featured-journal-entry {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  grid-template-columns: 4fr 2fr;
+}
+
+/* ABOUT.HTML */
+.about-hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+}
+
+.about-hero h3 {
+  font-size: 1.75rem;
+}
+
+.journal-callout {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.journal-callout h2 {
+  padding-top: 1rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+/* CONTACT.HTML */
 form {
   display: flex;
   flex-direction: column;
@@ -49,167 +204,27 @@ form {
 
 input {
   height: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-input,
 textarea {
   margin-bottom: 1rem;
 }
 
-.italicise {
-  font-style: italic;
-}
-
-.subtitle {
-  font-size: smaller;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.title {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.button {
-  padding: 0.5rem 1rem;
-  margin-right: 2rem;
-  text-decoration: none;
-  color: white;
-  background-color: #243b2a;
-}
-
-.subtitle,
-.call-to-action,
-.red {
-  color: #800020;
-}
-
-#come-along-for-the-making {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-#issie-in-progress {
-  font-size: 1.75rem;
-  font-weight: 500;
-}
-
-#form-and-insta {
+.contact-methods-layout {
   display: grid;
   gap: 2rem;
   grid-template-columns: 2fr 3fr;
 }
 
-#hello-im-issie-section {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
-  grid-template-columns: 2fr 1fr;
-}
-
-#featured {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 4fr 2fr;
-  margin-bottom: 2rem;
-}
-
-#journal-gallery {
-  display: grid;
-  gap: 2rem;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#finding-joy-in-the-making,
-#hello-im-issie-aside {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
-  grid-template-columns: 2fr 3fr;
-}
-
-#journal-entries-gallery,
-#what-youll-find-here-gallery {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#come-along-for-the-making,
-#a-little-further-down-the-road {
-  background-color: rgba(36, 59, 42, 0.15);
-}
-
-#hello-im-issie-aside p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-#finding-joy-in-the-making .paragraph {
-  margin-bottom: 2.5rem;
-}
-
-#hello-im-issie-aside img {
-  border-radius: 100%;
-}
-
-#hello-im-issie-section h3 {
-  font-size: 1.75rem;
-}
-
-#come-along-for-the-making h3 {
-  padding-top: 1rem;
-  margin-bottom: 0;
-  font-size: 2rem;
-}
-
-#a-little-further-down-the-road h3 {
+.commissions-callout h2 {
   padding-top: 1rem;
   padding-left: 1rem;
   font-size: 2rem;
   font-style: italic;
 }
 
-#a-little-further-down-the-road p {
+.commissions-callout p {
   padding-left: 1rem;
   padding-bottom: 1rem;
-}
-
-#why-in-progress p,
-#what-youll-find-here-gallery p,
-#come-along-for-the-making p,
-#find-me-on-instagram h2 {
-  margin-top: 0.5rem;
-}
-
-#find-me-on-instagram p,
-#the-journal h1,
-#hello-im-issie-section h1,
-#why-in-progress h2,
-#what-youll-find-here h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-footer p,
-#a-little-further-down-the-road p,
-#lets-keep-in-touch h1,
-#lets-keep-in-touch p,
-#the-journal .paragraph,
-#hello-im-issie-section h3 {
-  margin-top: 0;
-}
-
-#hello-im-issie-aside h2,
-#a-little-further-down-the-road h3,
-#find-me-on-instagram h2,
-#lets-keep-in-touch h1,
-#lets-keep-in-touch .subtitle,
-#the-journal .subtitle,
-#hello-im-issie-section .subtitle {
-  margin-bottom: 0;
 }

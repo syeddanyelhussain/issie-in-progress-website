@@ -3,42 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Issie in Progress | Welcome</title>
+    <title>Issie in Progress | About</title>
     <meta name="description" content="" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <h3 id="issie-in-progress">Issie In Progress</h3>
-      <nav aria-label="Site pages">
+      <a href="index.html" class="site-brand">Issie in Progress</a>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="journal.html">Journal</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <hr />
     <main>
-      <section id="hello-im-issie-section">
+      <section class="about-hero">
         <div>
-          <p class="subtitle">The person behind the pages</p>
-          <h1>Hello, I'm Issie.</h1>
-          <img src="images/about-desk.png" alt="Desk" />
+          <p class="eyebrow mb-0">The person behind the pages</p>
+          <h1 class="mt-0 mb-sm">Hello, I'm Issie.</h1>
+          <img src="images/desk.png" alt="An open swatch notebook, fountain pen, brushes and a mug on a sunny desk" />
         </div>
         <div>
-          <h3>
+          <p class="mt-0"> <!-- NEEDS TO BE STYLED BACK TO LOOKING LIKE H3 -->
             A stationery enthusiast, a curious maker, and very much a work in
             progress.
-          </h3>
+          </p>
           <p>
             This is my little space to share the pens, inks and creative
             experiments that bring me joy.
@@ -50,9 +44,9 @@
         </div>
       </section>
       <hr />
-      <section id="why-in-progress">
-        <h2>Why "in progress"?</h2>
-        <p>
+      <section>
+        <h2 class="mt-0 mb-sm">Why "in progress"?</h2>
+        <p class="mt-sm">
           Because I value exploration - the trying, the tinkering, and the
           in-between stages just as much as the finished results. I often have a
           few unfinished experiments on the go, and that's part of the fun. This
@@ -61,50 +55,52 @@
         </p>
       </section>
       <hr />
-      <section id="what-youll-find-here">
-        <h2>What you'll find here</h2>
-        <div id="what-youll-find-here-gallery">
+      <section>
+        <h2 class="mt-0 mb-sm">What you'll find here</h2>
+        <div class="cards-layout">
           <div>
-            <img src="images/about-pen.png" alt="Pen" />
-            <p class="title red">Pens & inks</p>
-            <p>
+            <img src="images/fountain-pen.png" loading="lazy" alt="A capped burgundy fountain pen resting on linen" />
+            <h3 class="card-title burgundy">Pens & inks</h3>
+            <p class="mt-sm">
               Thoughts, swatches and impressions from the pens and inks I'm
               using and enjoying.
             </p>
           </div>
           <div>
-            <img src="images/about-swatches.png" alt="Swatches" />
-            <p class="title red">Creative experiments</p>
-            <p>
+            <img src="images/ink-swatch-cards.png" loading="lazy" alt="Four ink swatches ranging from teal to burgundy on cards" />
+            <h3 class="card-title burgundy">Creative experiments</h3>
+            <p class="mt-sm">
               Small projects, material tests and playful ideas as I try out
               different ways to be creative.
             </p>
           </div>
           <div>
-            <img src="images/about-flowers.png" alt="Flowers" />
-            <p class="title red">Behind the process</p>
-            <p>
+            <img src="images/plant-sketch.png" loading="lazy" alt="An unfinished flower sketch in burgundy ink" />
+            <h3 class="card-title burgundy">Behind the process</h3>
+            <p class="mt-sm">
               A look at the steps, sketches and work-in-progress moments that
               happen along the way.
             </p>
           </div>
         </div>
       </section>
-      <aside id="come-along-for-the-making">
-        <h3>Come along for the making.</h3>
-        <p>Explore the journal or follow my latest experiments on Instagram.</p>
-        <a href="journal.html" class="button">Visit the journal</a>
+      <section class="journal-callout callout">
+        <h2>Come along for the making.</h2>
+        <p class="mt-sm">
+          Explore the journal or follow my latest experiments on Instagram.
+        </p>
+        <a href="journal.html" class="btn">Visit the journal</a>
         <a
           href="https://www.instagram.com/issie.in.progress/"
           target="_blank"
           rel="noopener noreferrer"
           >Instagram</a
         >
-      </aside>
+      </section>
     </main>
     <hr />
     <footer>
-      <p>&copy; 2026 Isilda Balde</p>
+      <p class="mt-0">&copy; 2026 Isilda Balde</p>
       <a
         href="https://www.instagram.com/issie.in.progress/"
         target="_blank"

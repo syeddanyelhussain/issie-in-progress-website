@@ -3,82 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Issie in Progress | Welcome</title>
+    <title>Issie in Progress | Contact</title>
     <meta name="description" content="" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <h3 id="issie-in-progress">Issie In Progress</h3>
-      <nav aria-label="Site pages">
+      <a href="index.html" class="site-brand">Issie in Progress</a>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="journal.html">Journal</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </header>
     <hr />
     <main>
-      <section id="lets-keep-in-touch">
-        <p class="subtitle">A note to say hello</p>
-        <h1>Let's keep in touch.</h1>
-        <p>
-          A question about an ink, a shared love of stationery, or just a hello
+      <section>
+        <p class="eyebrow mb-0">A note to say hello</p>
+        <h1 class="mb-0 mt-0">Let's keep in touch.</h1>
+        <p class="mt-0">
+          Have a question about an ink, a shared love of stationery, or just want to say hello?
           - I'd love to hear from you.
         </p>
       </section>
-      <div id="form-and-insta">
+      <div class="contact-methods-layout">
         <div>
           <form action="" method="post">
             <label for="name">Your name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
 
             <label for="email">Email address</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required/>
 
             <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" />
+            <input type="text" name="subject" id="subject" required/>
 
             <label for="message">Your message</label>
-            <textarea name="message" id="message" rows="12"></textarea>
+            <textarea name="message" id="message" rows="7" required></textarea>
 
             <button type="submit">Send message</button>
           </form>
         </div>
         <div>
-          <aside id="find-me-on-instagram">
-            <img src="images/contact-ink-and-pen.png" alt="Ink and pen" />
-            <h2>Find me on Instagram</h2>
-            <p>For recent swatches, desk discoveries and little experiments.</p>
+          <section>
+            <img src="images/letter.png" alt="A fountain pen and burgundy ink bottle beside a handwritten postcard" />
+            <h2 class="mb-0 mt-sm">Find me on Instagram</h2>
+            <p class="mt-0 mb-sm">
+              For recent swatches, desk discoveries and little experiments.
+            </p>
             <a
               href="https://www.instagram.com/issie.in.progress/"
               target="_blank"
               rel="noopener noreferrer"
               >@issie.in.progress</a
             >
-          </aside>
+          </section>
         </div>
       </div>
-      <aside id="a-little-further-down-the-road">
-        <h3>A little further down the road</h3>
-        <p>
+      <section class="commissions-callout callout">
+        <h2 class="mb-0">A little further down the road</h2>
+        <p class="mt-0">
           I'm currently exploring and sharing my creative process. Details about
           commissions will appear here when I'm ready to offer them.
         </p>
-      </aside>
+      </section>
     </main>
     <hr />
     <footer>
-      <p>&copy; 2026 Isilda Balde</p>
+      <p class="mt-0">&copy; 2026 Isilda Balde</p>
       <a
         href="https://www.instagram.com/issie.in.progress/"
         target="_blank"
